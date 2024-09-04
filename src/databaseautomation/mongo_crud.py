@@ -29,7 +29,7 @@ class mongodb_operation:
         return collection
         
 
-    def insert_record(self, record:dict, colleciton_name:str):
+    def insert_record(self, record:dict, collection_name:str):
         if type(record)==list:
             for data in record:
                 if type(data)!=dict:

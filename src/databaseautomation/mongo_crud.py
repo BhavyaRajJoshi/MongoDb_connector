@@ -3,7 +3,7 @@ import os
 import pandas as pd
 from pymongo.mongo_client import MongoClient
 import json
-from ensure import ensure_annotations
+import ensure
 
 
 class mongodb_operation:
@@ -51,8 +51,9 @@ class mongodb_operation:
 
 
         elif self.path.endswith('.xlsx'):
-            data = pd.read_excel(self.path, encoding = 'utf-8')
+            data = pd.read_excel(self.path)
 
-        datajson = json.loads(data.to_json(orient= 'record'))
-        self.create_collection
+        datajson = data.to_json(orient= 'records')
+        collection = self.create_collection()
+        collection.insert_many(datajson)
         

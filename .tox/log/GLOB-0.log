@@ -1,0 +1,54 @@
+action: GLOB, msg: packaging
+cwd: /Users/richcriticism/Documents/Documents/Bhavya_code/machine learning/MongoDb_connector
+cmd: /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9 setup.py sdist --formats=zip --dist-dir .tox/dist
+/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'MongoDB-Connect' will not be supported in future versions. Please use the underscore name 'MongoDB_Connect' instead
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/distutils/dist.py:274: UserWarning: Unknown distribution option: 'long_description_content'
+  warnings.warn(msg)
+running sdist
+running egg_info
+writing src/databaseautomation.egg-info/PKG-INFO
+writing dependency_links to src/databaseautomation.egg-info/dependency_links.txt
+writing requirements to src/databaseautomation.egg-info/requires.txt
+writing top-level names to src/databaseautomation.egg-info/top_level.txt
+reading manifest file 'src/databaseautomation.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src/databaseautomation.egg-info/SOURCES.txt'
+running check
+creating databaseautomation-0.0.6
+creating databaseautomation-0.0.6/src
+creating databaseautomation-0.0.6/src/databaseautomation
+creating databaseautomation-0.0.6/src/databaseautomation.egg-info
+copying files to databaseautomation-0.0.6...
+copying LICENSE -> databaseautomation-0.0.6
+copying README.md -> databaseautomation-0.0.6
+copying pyproject.toml -> databaseautomation-0.0.6
+copying setup.cfg -> databaseautomation-0.0.6
+copying setup.py -> databaseautomation-0.0.6
+copying src/databaseautomation/__init__.py -> databaseautomation-0.0.6/src/databaseautomation
+copying src/databaseautomation/mongo_crud.py -> databaseautomation-0.0.6/src/databaseautomation
+copying src/databaseautomation.egg-info/PKG-INFO -> databaseautomation-0.0.6/src/databaseautomation.egg-info
+copying src/databaseautomation.egg-info/SOURCES.txt -> databaseautomation-0.0.6/src/databaseautomation.egg-info
+copying src/databaseautomation.egg-info/dependency_links.txt -> databaseautomation-0.0.6/src/databaseautomation.egg-info
+copying src/databaseautomation.egg-info/requires.txt -> databaseautomation-0.0.6/src/databaseautomation.egg-info
+copying src/databaseautomation.egg-info/top_level.txt -> databaseautomation-0.0.6/src/databaseautomation.egg-info
+Writing databaseautomation-0.0.6/setup.cfg
+creating '.tox/dist/databaseautomation-0.0.6.zip' and adding 'databaseautomation-0.0.6' to it
+adding 'databaseautomation-0.0.6'
+adding 'databaseautomation-0.0.6/src'
+adding 'databaseautomation-0.0.6/PKG-INFO'
+adding 'databaseautomation-0.0.6/LICENSE'
+adding 'databaseautomation-0.0.6/pyproject.toml'
+adding 'databaseautomation-0.0.6/README.md'
+adding 'databaseautomation-0.0.6/setup.py'
+adding 'databaseautomation-0.0.6/setup.cfg'
+adding 'databaseautomation-0.0.6/src/databaseautomation'
+adding 'databaseautomation-0.0.6/src/databaseautomation.egg-info'
+adding 'databaseautomation-0.0.6/src/databaseautomation/mongo_crud.py'
+adding 'databaseautomation-0.0.6/src/databaseautomation/__init__.py'
+adding 'databaseautomation-0.0.6/src/databaseautomation.egg-info/PKG-INFO'
+adding 'databaseautomation-0.0.6/src/databaseautomation.egg-info/SOURCES.txt'
+adding 'databaseautomation-0.0.6/src/databaseautomation.egg-info/requires.txt'
+adding 'databaseautomation-0.0.6/src/databaseautomation.egg-info/top_level.txt'
+adding 'databaseautomation-0.0.6/src/databaseautomation.egg-info/dependency_links.txt'
+removing 'databaseautomation-0.0.6' (and everything under it)

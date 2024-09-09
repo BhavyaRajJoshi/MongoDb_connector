@@ -8,7 +8,7 @@ import ensure
 
 class mongodb_operation:
 
-    def __init__(self, client_url : str, database_name : str, collection_name : str=None):
+    def __init__(self, client_url : str, database_name : str, collection_name : str = "default_collection"):
 
         self.client_url = client_url
         self.database_name = database_name
@@ -23,13 +23,13 @@ class mongodb_operation:
         database = client[self.database_name]
         return database
 
-    def create_collection(self, collection_name: str = None):
+    def create_collection(self, collection_name: str = "default_collection"):
         database = self.create_database()
         collection = database[collection_name]
         return collection
         
 
-    def insert_record(self, record:dict, collection_name:str):
+    def insert_record(self, record:dict, collection_name:str = "default_collection"):
         if type(record)==list:
             for data in record:
                 if type(data)!=dict:
@@ -42,7 +42,7 @@ class mongodb_operation:
             collection = self.create_collection(collection_name)
             collection.insert_one(record) 
 
-    def bulk_insert(self, datafile:str,collection_name:str=None):
+    def bulk_insert(self, datafile:str,collection_name: str):
 
         self.path = datafile
 
